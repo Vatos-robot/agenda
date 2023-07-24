@@ -14,11 +14,11 @@ interface EventDao {
     fun getAllEvents(): LiveData<List<Event>>
 
     @Insert
-    suspend fun insert(event: Event)
+     fun insert(event: Event)
 
     @Update
-    suspend fun update(event: Event)
+     fun update(event: Event)
 
     @Delete
-    suspend fun delete(event: Event)
+     fun delete(event: Event)
 }
